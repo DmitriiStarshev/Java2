@@ -1,0 +1,19 @@
+
+import com.sun.jmx.snmp.SnmpUnknownAccContrModelException;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.Response;
+
+import java.io.IOException;
+
+public class Main {
+    public static void main(String[] args) throws IOException {
+        OkHttpClient okHttpClient = new OkHttpClient();
+        Request request = new Request.Builder()
+                .url("https://icanhazdadjoke.com/")
+                .header("Accept","application/json")
+                .build();
+        Response repsponse = okHttpClient.newCall(request).execute();
+        System.out.println(repsponse.body().string());
+    }
+}
