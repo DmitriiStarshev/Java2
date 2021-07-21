@@ -1,5 +1,7 @@
 package HomeWork2;
 
+import java.util.Arrays;
+
 public class Main {
     public static int arraySum(String[][] twoDimensionalArray) throws MyArraySizeException, MyArrayDataException {
         if (twoDimensionalArray.length != 4) {
@@ -8,7 +10,8 @@ public class Main {
         for (String[] array : twoDimensionalArray) {
             if (array.length != 4) {
                 throw new MyArraySizeException("Высота массива != 4" +
-                        " ,вы ввели длину массива равное = " + array.length);
+                        " ,вы ввели длину массива равное = " +array.length +","
+                        +Arrays.deepToString(twoDimensionalArray));
             }
         }
 
