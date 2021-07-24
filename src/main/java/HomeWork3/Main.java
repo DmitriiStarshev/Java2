@@ -25,8 +25,8 @@ public class Main {
         appleBox1.addFruit(new Apple(), 14);
 
 
-        System.out.println("Вес первой коробки с опельсинами :" + orangeBox.getWeight());
-        System.out.println("Вес второй коробки с опельсинами :" + orangeBox1.getWeight());
+        System.out.println("Вес первой коробки с апельсинами :" + orangeBox.getWeight());
+        System.out.println("Вес второй коробки с апельсинами :" + orangeBox1.getWeight());
         System.out.println("Вес первой коробки с яблоками :" + appleBox.getWeight());
         System.out.println("Вес второй коробки с яблоками :" + appleBox1.getWeight());
 
