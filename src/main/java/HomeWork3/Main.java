@@ -31,15 +31,15 @@ public class Main {
         System.out.println("Вес второй коробки с яблоками :" + appleBox1.getWeight());
 
         System.out.println("Сравнение первых коробок с яблоками и апельсинами " + orangeBox.compare(appleBox));
-        System.out.println("Сравнение первых коробок с яблоками и апельсинами " + orangeBox1.compare(appleBox1));
+        System.out.println("Сравнение вторых коробок с яблоками и апельсинами " + orangeBox1.compare(appleBox1));
 
         orangeBox.pourOver(orangeBox1);
         appleBox.pourOver(appleBox1);
 
-        System.out.println(orangeBox1.getWeight());
-        System.out.println(appleBox1.getWeight());
-        System.out.println(orangeBox.getWeight());
-        System.out.println(appleBox.getWeight());
+        System.out.println("Вес второй коробки с пересыпанными апельсинами с первой коробки: "+ orangeBox1.getWeight());
+        System.out.println("Вес второй коробки с пересыпанными яблоками с первой коробки: "+ appleBox1.getWeight());
+        System.out.println("Вес первой коробки с апельсанами: " + orangeBox.getWeight());
+        System.out.println("Вес первой коробки с яблоками: " + appleBox.getWeight());
     }
 
     public static void changeArrayElements(Object[] arr, int n1, int n2) {
