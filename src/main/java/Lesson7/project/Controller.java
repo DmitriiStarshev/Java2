@@ -20,8 +20,8 @@ public class Controller {
                 weatherModel.getWeather(selectedCity,Period.NOW);
                 break;
             case FIVE_DAYS:
-                throw new IOException("Метод не реализован");
-//                weatherModel.getWeather(selectedCity,Period.FIVE_DAYS);
+//                throw new IOException("Метод не реализован");
+                weatherModel.getWeather(selectedCity,Period.FIVE_DAYS);
         }
     }
 
